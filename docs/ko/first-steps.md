@@ -10,7 +10,7 @@
 
 #### 전제조건
 
-Please make sure that [Node.js](https://nodejs.org/) (&gt;= 10.13.0) is installed on your operating system.
+운영체제에 [Node.js](https://nodejs.org/) (&gt;=10.13.0)가 설치되어 있어야 합니다.
 
 #### 설치
 
@@ -34,14 +34,14 @@ $ nest new project-name
   </div>
 </div>
 
-Here's a brief overview of those core files:
+다음은 핵심 파일에 대한 간략한 설명입니다.
 
  |
 --- | ---
 `app.controller.ts` | 하나의 라우트를 가진 기본 컨트롤러.
 `app.controller.spec.ts` | 컨트롤러(controller) 유닛 테스트(unit tests)
 `app.module.ts` | 어플리케이션의 루트 모듈(root module).
-`app.service.ts` | A basic service with a single method.
+`app.service.ts` | 단일 메소드를 사용하는 기본 서비스(service)입니다.
 `main.ts` | 핵심 함수인 `NestFactory`를 사용하여 Nest 어플리케이션 인스턴스를 생성하는 엔트리 파일(entry file).
 
 `main.ts`는 애플리케이션을 **부트 스트랩**하는 비동기(async) 함수를 포함하고 있습니다.
@@ -91,7 +91,7 @@ Nest는 플랫폼 지식 없이도 구동할 수 있는(platform-agnostic) 프�
 const app = await NestFactory.create<NestExpressApplication>(AppModule);
 ```
 
-#### Running the application
+#### 애플리케이션 실행
 
 설치가 완료되면, 운영체제(OS)의 명령 프롬프트에서 다음 명령을 실행하여 인바운드 HTTP 요청을 수신하는 애플리케이션을 실행할 수 있습니다.
 
